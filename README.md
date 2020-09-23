@@ -20,7 +20,7 @@ Clone the repo and run 'npm install && npm run serve' for local demo
 ## Install
 
 ```bash
-npm i vue-time-date-range-picker
+npm i vue-time-date-pick-2
 ```
 
 ## Usage

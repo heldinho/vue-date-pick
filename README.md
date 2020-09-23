@@ -1,4 +1,4 @@
-# vue-time-date-range-picker
+# vue-date-pick
 
 A Vue Component to pick a ranged datetime in calendar. Built alongside Vue 2.x . 
 This datepicker utilize **moment** for translations.

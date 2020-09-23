@@ -1,0 +1,80 @@
+{
+  "name": "vue-date-pick-2",
+  "version": "1.1.0",
+  "description": "Vue time date range picker",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "range-datetime-picker",
+    "date-time-range-picker"
+  ],
+  "main": "/dist/vdprDatePicker.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "webpack",
+    "preserve": "rimraf demo",
+    "serve": "webpack-dev-server --config webpack-serve.config.js --open",
+    "lint": "eslint --fix --ext .js,.vue src example test/unit/specs",
+    "test": "jest --config test/unit/jest.config.js --coverage"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heldinho/vue-date-pick.git"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "author": "Helder Passos <helderferreirapassos@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heldinho/vue-date-pick/issues"
+  },
+  "homepage": "https://github.com/heldinho/vue-date-pick#readme",
+  "private": false,
+  "jest": {
+    "coverageDirectory": "./test/unit/coverage/",
+    "collectCoverage": true
+  },
+  "peerDependencies": {
+    "moment": "^2.27.0",
+    "vue": "^2.6.11"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "moment": "^2.27.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "regenerator-runtime": "^0.13.5",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^8.0.2",
+    "terser-webpack-plugin": "^3.0.6",
+    "vue": "^2.6.11",
+    "vue-jest": "^3.0.5",
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
